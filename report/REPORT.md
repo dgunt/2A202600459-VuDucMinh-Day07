@@ -157,9 +157,6 @@ for i, chunk in enumerate(chunks[:3]):
     print(f"Chunk {i}: {len(chunk)} chars, starts: {chunk[:80]}...")
 ```
 
-
-```
-
 ### So Sánh: Strategy của tôi vs Baseline
 
 | Tài liệu | Strategy | Chunk Count | Avg Length | Retrieval Quality? |
@@ -319,13 +316,16 @@ Chạy 5 benchmark queries của nhóm trên implementation cá nhân của bạ
 ## 7. What I Learned (5 điểm — Demo)
 
 **Điều hay nhất tôi học được từ thành viên khác trong nhóm:**
-> SentenceChunker của Nguyễn Thị Ngọc cho thấy rằng việc sử dụng domain knowledge (nhóm câu thay vì chia cứng) có thể đạt retrieval quality cao hơn mà chỉ dùng 12 chunks thay vì 47 của tôi. Điều này dạy tôi rằng việc hiểu cấu trúc ngôn ngữ tự nhiên quan trọng hơn cố gắng tôn trọng 100% cấu trúc markdown của tài liệu. Chi phí embedding thấp hơn cũng có lợi ích dài hạn cho scalability.
+
+SentenceChunker của Nguyễn Thị Ngọc cho thấy rằng việc sử dụng domain knowledge (nhóm câu thay vì chia cứng) có thể đạt retrieval quality cao hơn mà chỉ dùng 12 chunks thay vì 47 của tôi. Điều này dạy tôi rằng việc hiểu cấu trúc ngôn ngữ tự nhiên quan trọng hơn cố gắng tôn trọng 100% cấu trúc markdown của tài liệu. Chi phí embedding thấp hơn cũng có lợi ích dài hạn cho scalability.
 
 **Điều hay nhất tôi học được từ nhóm khác (qua demo):**
-> Nhóm khác sử dụng hierarchical chunking (tôi chưa thử) với multi-level metadata (document_level, section_level, chunk_level) giúp retrieval có context richer. Kỹ thuật này cho phép truy vấn có thể "zoom in/out" tùy theo abstract level cần thiết, thay vì luôn lấy chunk nhỏ nhất. Điều này mở ra khả năng hybrid retrieval kết hợp section context với chunk detail.
+
+Nhóm khác sử dụng hierarchical chunking (tôi chưa thử) với multi-level metadata (document_level, section_level, chunk_level) giúp retrieval có context richer. Kỹ thuật này cho phép truy vấn có thể "zoom in/out" tùy theo abstract level cần thiết, thay vì luôn lấy chunk nhỏ nhất. Điều này mở ra khả năng hybrid retrieval kết hợp section context với chunk detail.
 
 **Nếu làm lại, tôi sẽ thay đổi gì trong data strategy?**
-> Tôi sẽ test hybrid approach: chunk_size=1000 (thay vì 800) với explicit sentence boundary detection để tránh cắt giữa câu quan trọng, và thêm hierarchical metadata để giữ link tới parent section. Ngoài ra, tôi sẽ thêm bước post-processing để merge tiny chunks (<200 chars) ngay sau khi chunking, giảm "noise" và tối ưu hóa embedding cost mà vẫn giữ retrieval quality.
+
+Tôi sẽ test hybrid approach: chunk_size=1000 (thay vì 800) với explicit sentence boundary detection để tránh cắt giữa câu quan trọng, và thêm hierarchical metadata để giữ link tới parent section. Ngoài ra, tôi sẽ thêm bước post-processing để merge tiny chunks (<200 chars) ngay sau khi chunking, giảm "noise" và tối ưu hóa embedding cost mà vẫn giữ retrieval quality.
 
 ---
 
