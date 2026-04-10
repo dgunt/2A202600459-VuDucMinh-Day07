@@ -1,0 +1,89 @@
+{
+  "01_quy_dinh_chung.md": {
+    "size": 4406,
+    "strategies": {
+      "fixed_size": {
+        "count": 6,
+        "avg_length": 776.0,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT.\n\n# QUY CHẾ\n\n## Thi tốt nghiệp trung học phổ thông\n\n*(Ban hành kèm ",
+          "lý vi phạm; tổ chức thực hiện.\n\n2. Quy chế thi áp dụng đối với các trường THPT, trung tâm Giáo dục t"
+        ]
+      },
+      "by_sentences": {
+        "count": 11,
+        "avg_length": 398.27,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT. # QUY CHẾ\n\n## Thi tốt nghiệp trung học phổ thông\n\n*(Ban hành kèm t",
+          "Quy chế này quy định về thi tốt nghiệp trung học phổ thông (sau đây gọi là Quy chế thi) bao gồm: Quy"
+        ]
+      },
+      "recursive": {
+        "count": 7,
+        "avg_length": 627.71,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT.\n\n# QUY CHẾ\n\n## Thi tốt nghiệp trung học phổ thông\n\n*(Ban hành kèm ",
+          "2. Quy chế thi áp dụng đối với các trường THPT, trung tâm Giáo dục thường xuyên (GDTX), trung tâm Gi"
+        ]
+      }
+    }
+  },
+  "08_coi_thi.md": {
+    "size": 15182,
+    "strategies": {
+      "fixed_size": {
+        "count": 21,
+        "avg_length": 770.57,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT.\n\n## COI THI\n\n### Điều 20. Ban Coi thi\n\n1. Thành phần: Trưởng ban d",
+          "a trong các buổi thi;\n\nb) Phó Trưởng ban Coi thi, ủy viên và thư ký chịu trách nhiệm về kết quả thực"
+        ]
+      },
+      "by_sentences": {
+        "count": 12,
+        "avg_length": 1262.5,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT. ## COI THI\n\n### Điều 20. Ban Coi thi\n\n1.",
+          "Thành phần: Trưởng ban do lãnh đạo Hội đồng thi kiêm nhiệm; Phó Trưởng ban thường trực là lãnh đạo s"
+        ]
+      },
+      "recursive": {
+        "count": 23,
+        "avg_length": 658.17,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT.\n\n## COI THI\n\n### Điều 20. Ban Coi thi\n\n1. Thành phần: Trưởng ban d",
+          "b) Phó Trưởng ban Coi thi, ủy viên và thư ký chịu trách nhiệm về kết quả thực hiện nhiệm vụ, quyền h"
+        ]
+      }
+    }
+  },
+  "09_cham_thi.md": {
+    "size": 29970,
+    "strategies": {
+      "fixed_size": {
+        "count": 40,
+        "avg_length": 798.0,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT.\n\n## CHẤM THI\n\n### Điều 24. Khu vực chấm thi\n\n1. Việc chấm thi tại ",
+          "phải được khóa và niêm phong, trên nhãn niêm phong phải có đủ chữ ký của người giữ chìa khóa, lãnh đ"
+        ]
+      },
+      "by_sentences": {
+        "count": 44,
+        "avg_length": 678.7,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT. ## CHẤM THI\n\n### Điều 24. Khu vực chấm thi\n\n1.",
+          "Việc chấm thi tại mỗi Hội đồng thi được thực hiện tại không quá 02 (hai) khu vực; trong đó, mỗi Ban "
+        ]
+      },
+      "recursive": {
+        "count": 47,
+        "avg_length": 635.7,
+        "sample_chunks": [
+          "Nguon: Thong tu 15/2020/TT-BGDDT.\n\n## CHẤM THI\n\n### Điều 24. Khu vực chấm thi\n\n1. Việc chấm thi tại ",
+          "2.34 Phòng chứa bài thi, phòng chấm bài thi, tủ, thùng hoặc các vật dụng chứa túi bài thi phải an to"
+        ]
+      }
+    }
+  }
+}
